@@ -1,23 +1,26 @@
 body {
   width: 100vw;
 }
+.flex {
+  display: flex;
+}
 .header {
   width: 100%;
   height: 75px;
+  position: sticky;
+  top: 0;
   background-color: coral;
 }
 .main {
-  display: flex;
   width: 100%;
   height: calc(100vh - 75px);
   background-color: lightblue;
 }
 section {
-  display: flex;
   height: 100%;
 }
 section .tab {
-  display: flex;
+  height: calc(100vh - 75px);
   align-items: center;
   padding: 0 10px;
   font-size: 18px;
@@ -30,11 +33,15 @@ section .tab > p {
 }
 section .content {
   display: none;
+  overflow-y: scroll;
   width: calc(100vw - 266px);
 }
 section:first-child .content {
   display: block;
 }
 section .container {
+  max-width: 950px;
+  padding: 0 35px;
+  margin: 100px auto;
+  background-color: chartreuse;
 }
-/* for jquery */
