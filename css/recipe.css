@@ -1,0 +1,40 @@
+body {
+  width: 100vw;
+}
+.header {
+  width: 100%;
+  height: 75px;
+  background-color: coral;
+}
+.main {
+  display: flex;
+  width: 100%;
+  height: calc(100vh - 75px);
+  background-color: lightblue;
+}
+section {
+  display: flex;
+  height: 100%;
+}
+section .tab {
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  font-size: 18px;
+  background-color: blueviolet;
+}
+section .tab > p {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  transform: rotate(180deg);
+}
+section .content {
+  display: none;
+  width: calc(100vw - 266px);
+}
+section:first-child .content {
+  display: block;
+}
+section .container {
+}
+/* for jquery */
