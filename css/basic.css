@@ -1,0 +1,33 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+:root {
+  /* set color here!!!! */
+  --color-example-100: #f3eed9;
+
+  /* set font family here */
+  --ff-primary: "Roboto";
+}
+
+h1 {
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+h2 {
+}
+h3 {
+}
+h4 {
+}
+h5 {
+}
+h6 {
+}
+p {
+}
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
