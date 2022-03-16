@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 :root {
-  background-color: #EEFFF5;
+  background-color: white;
 
   /* set font family here */
   --ff-primary: "Roboto";
@@ -53,7 +53,7 @@ input {
 }
 
 h1 {
-  font-size: 42px;
+  font-size: 32px;
   margin-bottom: 20px;
 }
 
