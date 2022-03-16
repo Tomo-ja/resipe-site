@@ -1,0 +1,131 @@
+body {
+  width: 100vw;
+}
+.flex {
+  display: flex;
+}
+.header {
+  width: 100%;
+  height: 75px;
+  position: sticky;
+  top: 0;
+  background-color: coral;
+}
+.main {
+  width: 100%;
+  height: calc(100vh - 75px);
+  background-color: lightblue;
+}
+section {
+  height: 100%;
+}
+section .tab {
+  height: calc(100vh - 75px);
+  align-items: center;
+  padding: 0 10px;
+  font-size: 18px;
+  background-color: blueviolet;
+}
+section .tab > p {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  transform: rotate(180deg);
+}
+section .content {
+  display: none;
+  overflow-y: scroll;
+  width: calc(100vw - 266px);
+}
+section:nth-child(5) .content {
+  display: block;
+}
+section .container {
+  max-width: 950px;
+  padding: 0 35px;
+  margin: 100px auto;
+  background-color: chartreuse;
+}
+
+#over-view .img-holder {
+  width: 50%;
+  height: 550px;
+}
+#over-view .img-holder > img {
+  object-fit: cover;
+}
+#over-view .content-holder {
+  width: 50%;
+  margin-left: 30px;
+}
+#over-view .tags {
+  margin-bottom: 100px;
+}
+#over-view .tags > li {
+  margin-right: 15px;
+  padding: 4px;
+  border-radius: 10px;
+  background-color: fuchsia;
+  text-align: center;
+  font-size: 16px;
+}
+#over-view .content-holder p {
+  margin-bottom: 30px;
+  font-size: 20px;
+  line-height: 1.5em;
+}
+#over-view .feedback p {
+  margin-right: 50px;
+}
+#ingredients .flex {
+  flex-wrap: wrap;
+}
+#ingredients .flex .img-holder {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+}
+#ingredients .flex .img-holder img {
+  border-radius: 50%;
+}
+#ingredients .flex .item {
+  margin: 35px;
+  text-align: center;
+}
+
+#method li {
+  margin: 35px 25px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #c4c4c4;
+  font-size: 26px;
+  list-style: decimal;
+}
+
+#video .video-holder {
+  width: 880px;
+  height: 497px;
+}
+#video iframe {
+  width: 100%;
+  height: 100%;
+}
+#review .comment {
+  margin-bottom: 25px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #c4c4c4;
+}
+#review .comment .img-holder {
+  width: 50px;
+  height: 50px;
+  margin-right: 25px;
+  margin-bottom: 15px;
+}
+#review .comment .img-holder img {
+  width: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+#review .comment h2 {
+  margin: 4px 0px 6px 0;
+  font-size: 18px;
+  font-weight: 600;
+}

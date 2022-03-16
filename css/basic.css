@@ -46,6 +46,8 @@ input {
 }
 
 h1 {
+  font-size: 42px;
+  margin-bottom: 20px;
 }
 
 h2 {
@@ -68,4 +70,8 @@ h6 {
 
 p {
   margin-right: 10%;
+}
+img {
+  max-width: 100%;
+  max-height: 100%;
 }
