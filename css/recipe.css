@@ -17,7 +17,8 @@ body {
   height: 75px;
   position: sticky;
   top: 0;
-  background-color: green;
+  background-color: white;
+  border-bottom: 3px solid #363636;
 }
 >>>>>>> 103231ce2da817b15acf0d2524329ea0cacab449
 .main {
@@ -37,7 +38,7 @@ section .tab {
   background-color:#363636;
   border-left: 1px;
   border-color: white;
-  color: white;
+  color: #eefff5;
 }
 section .tab > p {
   writing-mode: vertical-rl;
@@ -165,8 +166,10 @@ section .container {
   margin: 0;
 }
 .tab.hover {
-  background-color: blue;
+  background-color: rgb(192, 192, 196);
+  color: #363636;
 }
 .tab.open {
-  background-color: cornsilk;
+  background-color: #eefff5;
+  color: #363636;
 }
