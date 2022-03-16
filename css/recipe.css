@@ -29,7 +29,7 @@ section .content {
   overflow-y: scroll;
   width: calc(100vw - 266px);
 }
-section:nth-child(5) .content {
+section:nth-child(6) .content {
   display: block;
 }
 section .container {
@@ -121,4 +121,24 @@ section .container {
   margin: 4px 0px 6px 0;
   font-size: 18px;
   font-weight: 600;
+}
+#similar-recipes .flex,
+#serve-with .flex {
+  flex-wrap: wrap;
+}
+#similar-recipes .recipe,
+#serve-with .recipe {
+  width: 200px;
+  margin: 0 20px 35px 0;
+  text-align: center;
+}
+#similar-recipes h2,
+#serve-with h2 {
+  margin: 10px 0;
+  font-weight: 600;
+  font-size: 18px;
+}
+#similar-recipes p,
+#serve-with p {
+  margin: 0;
 }
