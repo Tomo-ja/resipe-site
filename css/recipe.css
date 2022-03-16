@@ -1,5 +1,11 @@
 body {
   width: 100vw;
+  color: #666666;
+  font-family: sans-serif, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: .6px;
 }
 .flex {
   display: flex;
@@ -9,22 +15,26 @@ body {
   height: 75px;
   position: sticky;
   top: 0;
-  background-color: coral;
+  background-color: green;
 }
 .main {
   width: 100%;
   height: calc(100vh - 75px);
-  background-color: lightblue;
+  /* background-color: lightblue; */
 }
 section {
   height: 100%;
+  width: 100%;
 }
 section .tab {
   height: calc(100vh - 75px);
   align-items: center;
-  padding: 0 10px;
-  font-size: 18px;
-  background-color: blueviolet;
+  padding: 0 5px;
+  font-size: 14px;
+  background-color:#363636;
+  border-left: 1px;
+  border-color: white;
+  color: white;
 }
 section .tab > p {
   writing-mode: vertical-rl;
@@ -35,15 +45,17 @@ section .content {
   display: none;
   overflow-y: scroll;
   width: calc(100vw - 266px);
+  background-color: white;
 }
 section:nth-child(5) .content {
   display: block;
 }
 section .container {
-  max-width: 950px;
-  padding: 0 35px;
+  max-width: 100%;
+  padding: 35px 35px;
   margin: 100px auto;
-  background-color: chartreuse;
+  background-color: #f0efef;
+  position: relative;
 }
 
 #over-view .img-holder {
