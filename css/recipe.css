@@ -149,3 +149,9 @@ section .container {
 #serve-with p {
   margin: 0;
 }
+.tab.hover {
+  background-color: blue;
+}
+.tab.open {
+  background-color: cornsilk;
+}
