@@ -5,7 +5,7 @@ body {
   font-size: 14px;
   font-weight: 400;
   line-height: 22px;
-  letter-spacing: .6px;
+  letter-spacing: 0.6px;
 }
 .flex {
   display: flex;
@@ -21,14 +21,16 @@ section {
   width: 100%;
 }
 section .tab {
-  height: calc(100vh - 75px);
+  height: calc(100vh - 120px);
+  margin: auto 0;
   align-items: center;
   padding: 0 5px;
   font-size: 14px;
-  background-color:#363636;
+  background-color: #363636;
   border-left: 1px;
   border-color: white;
-  color: white;
+  color: #eefff5;
+  border-radius: 15px;
 }
 section .tab > p {
   writing-mode: vertical-rl;
@@ -39,16 +41,14 @@ section .content {
   display: none;
   overflow-y: scroll;
   width: calc(100vw - 266px);
-  background-color: white;
 }
 section:nth-child(6) .content {
   display: block;
 }
 section .container {
-  max-width: 100%;
+  max-width: 980px;
   padding: 35px 35px;
   margin: 100px auto;
-  background-color: #f0efef;
   position: relative;
 }
 
@@ -57,6 +57,7 @@ section .container {
   height: 550px;
 }
 #over-view .img-holder > img {
+  width: 100%;
   object-fit: cover;
 }
 #over-view .content-holder {
@@ -75,9 +76,18 @@ section .container {
   font-size: 16px;
 }
 #over-view .content-holder p {
+  margin-right: 0;
   margin-bottom: 30px;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 1.5em;
+}
+
+#over-view .feedback img {
+  width: 25px;
+  height: 25px;
+  position: relative;
+  top: 5px;
+  margin-right: 10px;
 }
 #over-view .feedback p {
   margin-right: 50px;
@@ -102,7 +112,7 @@ section .container {
   margin: 35px 25px;
   padding-bottom: 20px;
   border-bottom: 1px solid #c4c4c4;
-  font-size: 26px;
+  font-size: 16px;
   list-style: decimal;
 }
 
@@ -155,9 +165,45 @@ section .container {
 #serve-with p {
   margin: 0;
 }
+#similar-recipes .bg-img,
+#serve-with .bg-img {
+  width: 200px;
+  height: 300px;
+  padding: 100px 0;
+  background-image: url(../images/dammy_img_food.jpg);
+  background-size: cover;
+}
+#similar-recipes .bg-img-text,
+#serve-with .bg-img-text {
+  width: 0px;
+  height: 0px;
+  text-align: center;
+  line-height: 100px;
+  margin: auto;
+  background-color: chocolate;
+  border-radius: 50%;
+}
+#similar-recipes .cook-time::before,
+#serve-with .cook-time::before {
+  background-image: url("../images/icon_timer.svg");
+  background-size: 15px 15px;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  content: "";
+  position: relative;
+  top: 3px;
+  left: -5px;
+}
+
 .tab.hover {
-  background-color: blue;
+  background-color: white;
+  color: black;
 }
 .tab.open {
-  background-color: cornsilk;
+  position: relative;
+  background-color: white;
+  color: black;
+  box-shadow: 0px 8px 16px -2px rgba(10, 10, 10, 0.1),
+    10px 0px 12px -2px rgba(10, 10, 10, 0.3);
 }

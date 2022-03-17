@@ -11,51 +11,76 @@
 </head>
 
 <body>
-	
-	<h1>3000+ Resipes Waiting for you</h1>
+	<div class="content">
+		<h1>3000+ Resipes Waiting for you</h1>
 
-	<section id="carousel">
-		<div class="slide-image" id="slide1">
-		</div>
-		<div class="slide-image" id="slide2">
-		</div>
-		<div class="slide-image" id="slide3">
-		</div>
-		<div class="slide-image" id="slide4">
-	  </section>
-	
-	  <section class="related-topics">
-		<div class="topics">
+		<input id="searchbar" onkey="search_food()" type="text" name="search" placeholder="Search foods...">
+	</div>
 
-			<img src="https://images.pexels.com/photos/2325302/pexels-photo-2325302.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="breakfast">
+	<div class="container"> 
+		<div class="slider">
+			<div class="slider__slides">
+				<div class="slider__image active">
+					<img class="img-slide"  src="https://riomarkennedyonline.com.br/riomarkennedyonline/2020/05/PASTEL_CHEPPITOS.jpg" alt="food1">
+				</div>
+				<div class="slider__image">
+					<img class="img-slide"  src="https://images.orangepage.net/media/article/5012/images/8d3d9696cb5d7dbc0da44fa5f553b6f818e7d3e0.jpg?w=1200" alt="food2">
+				</div>
+				<div class="slider__image">
+					<img class="img-slide"  src="https://www.giallozafferano.it/images/242-24242/Crepe-alla-Nutella_450x300.jpg" alt="food3">
+				</div>
+				<div class="slider__image">
+					<img class="img-slide"  src="https://s2.glbimg.com/nksCDlmBan7iiSCgJqZdN7A5ekc=/e.glbimg.com/og/ed/f/original/2019/10/22/6th-place_small-white-hair-spider_javier-ruperez_nikon-small-world.jpg" alt="food4">
+				</div>
+				<div id="nav-button--prev" class="slider__nav-button"></div>
+				<div id="nav-button--next" class="slider__nav-button"></div>
+				<div class="slider__nav">
+					<div class="slider__navlink active"></div>
+					<div class="slider__navlink"></div>
+					<div class="slider__navlink"></div>
+				
+					<div class="slider__navlink"></div>
+				</div>
+			</div>
+		</div>
+	</div>	
 
-			<h4>Breakfast</h4>
-		</div>	
-		<div class="topics">
-			
+		<section class="related-topics">
+			<div class="topics">
+
+				<img src="https://images.pexels.com/photos/2325302/pexels-photo-2325302.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="breakfast">
+
+				<button class="description">Breakfast</button>
+			</div>	
+			<div class="topics">
+				
 				<img src="https://images.pexels.com/photos/8992932/pexels-photo-8992932.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="soapsandstews">
-		
-			<h4>Soaps & Stews</h4>
-		</div>	
-		<div class="topics">
-		
+			
+				<button class="description">Soaps & Stews</button>
+			</div>	
+			<div class="topics">
+			
 				<img src="https://images.pexels.com/photos/5713748/pexels-photo-5713748.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="salads">
-		
-			<h4>Salads</h4>
-		</div>	
-		<div class="topics">
-		
+			
+				<button class="description">Salads</button>
+			</div>	
+			<div class="topics">
+			
 				<img src="https://images.pexels.com/photos/2739250/pexels-photo-2739250.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="maindishes">
-		
-			<h4>Main Dishes</h4>
-		</div>	
-		<div class="topics">
-		
+			
+				<button class="description">Main Dishes</button>
+			</div>	
+			<div class="topics">
+			
 				<img src="https://images.pexels.com/photos/3185509/pexels-photo-3185509.png?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="desserts">
-		
-			<h4>Desserts</h4>
-		</div>	
-	  </section>
+			
+				<button class="description">Desserts</button>
+			</div>	
+		</section>
+		<section class="about">
+			<h2>About us</h2>
+			<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi nisi officia cum placeat ad alias quisquam culpa error aliquam! Eaque possimus optio cum rem nulla minima cumque! Deserunt, quasi adipisci?</p>
+		</section>
 
 	<script src="./javascript/jquery-3.6.0.min.js"></script>
 	<script src="./javascript/index.js"></script>

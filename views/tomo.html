@@ -14,10 +14,26 @@
 			<h2>HOME</h2>
 			<h2>ABOUT</h2>
 			<h2>CONTACT</h2>
-			<img src="../images/logo.png" alt="logo">
-			<h2>RECIPES</h2>
-			<h2>ARTICLE</h2>
-			<h2>SHARE YOUR RECIPE</h2>
+			<img src="../images/logo.png" alt="logo" id="logo">
+			<div>
+				<h2>RECIPES<span><img src="../images/icon_drop-down.svg" alt=""></span></h2>
+				<!-- <div id="recipes" class="modal">
+					<h3>Category</h3>
+					<input type="text">
+					<ul>
+						<li>Italian</li>
+						<li>Chinese</li>
+						<li>Japanese</li>
+						<li>Korean</li>
+						<li>Brazilian</li>
+						<li>Mexican</li>
+					</ul>
+				</div>	 -->
+			</div>
+			<div>
+				<h2>ARTICLE <span><img src="../images/icon_drop-down.svg" alt=""></span></h2>
+			</div>
+			<h2>Share yours</h2>
 	</header>
 	<main class="main flex">
 		<section id="over-view" class="flex">
@@ -44,8 +60,8 @@
 							voluptates dicta perspiciatis quae quia architecto consequuntur? Esse 
 							similique voluptas temporibus velit? Sapiente assumenda amet quas quos ea!</p>
 						<div class="feedback flex">
-							<p>100 good</p>
-							<p>15 min</p>
+							<p><img src="../images/icon_good-btn.svg" alt="">100</p>
+							<p><img src="../images/icon_timer.svg"> 15 min</p>
 						</div>
 					</div>
 				</div>
@@ -107,11 +123,15 @@
 				<div class="container">
 					<h1>How to cook</h1>
 					<ol>
-						<li>Lorem, ipsum dolor.</li>
-						<li>Lorem, ipsum dolor.</li>
-						<li>Lorem, ipsum dolor.</li>
+						<li>Bring a large pot of lightly salted water to a boil. Cook spaghetti in the boiling water, 
+							stirring occasionally until cooked through but firm to the bite, 10 to 12 minutes. 
+							Drain and rinse under cold water. Transfer pasta to a serving bowl and toss with olive oil.</li>
+						<li>Whisk soy sauce, sugar, vinegar, sesame seeds, chili sauce, and sesame oil together in a bowl 
+							until sugar dissolves. Toss soy sauce mixture with pasta; top with green onions, red bell pepper, and snap peas. 
+							Refrigerate 30 minutes to overnight to allow flavors to blend. Toss again before serving.</li>
+						<!-- <li>Lorem, ipsum dolor.</li>
 						<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione sapiente fugiat, deleniti nostrum aspernatur quia et praesentium atque reiciendis suscipit laborum provident vel consequuntur eligendi ad enim. Ab, vero error!</li>
-						<li>Lorem, ipsum dolor.</li>
+						<li>Lorem, ipsum dolor.</li> -->
 					</ol>
 				</div>
 			</div>
@@ -208,34 +228,46 @@
 					<h1>Similar Recipes</h1>
 					<div class="flex">
 						<div class="recipe">
-							<img src="../images/dammy_img_food.jpg" alt="">
+							<div class="bg-img">
+								<div class="bg-img-text"></div>
+							</div>
 							<h2>dish name</h2>
-							<p>cook time</p>
+							<p class="cook-time">cook time</p>
 						</div>
 						<div class="recipe">
-							<img src="../images/dammy_img_food.jpg" alt="">
+							<div class="bg-img">
+								<div class="bg-img-text"></div>
+							</div>
 							<h2>dish name</h2>
-							<p>cook time</p>
+							<p class="cook-time">cook time</p>
 						</div>
 						<div class="recipe">
-							<img src="../images/dammy_img_food.jpg" alt="">
+							<div class="bg-img">
+								<div class="bg-img-text"></div>
+							</div>
 							<h2>dish name</h2>
-							<p>cook time</p>
+							<p class="cook-time">cook time</p>
 						</div>
 						<div class="recipe">
-							<img src="../images/dammy_img_food.jpg" alt="">
+							<div class="bg-img">
+								<div class="bg-img-text"></div>
+							</div>
 							<h2>dish name</h2>
-							<p>cook time</p>
+							<p class="cook-time">cook time</p>
 						</div>
 						<div class="recipe">
-							<img src="../images/dammy_img_food.jpg" alt="">
+							<div class="bg-img">
+								<div class="bg-img-text"></div>
+							</div>
 							<h2>dish name</h2>
-							<p>cook time</p>
+							<p class="cook-time">cook time</p>
 						</div>
 						<div class="recipe">
-							<img src="../images/dammy_img_food.jpg" alt="">
+							<div class="bg-img">
+								<div class="bg-img-text"></div>
+							</div>
 							<h2>dish name</h2>
-							<p>cook time</p>
+							<p class="cook-time">cook time</p>
 						</div>
 					</div>
 				</div>
@@ -250,34 +282,46 @@
 					<h1>Serve with</h1>
 					<div class="flex">
 						<div class="recipe">
-							<img src="../images/dammy_img_food.jpg" alt="">
+							<div class="bg-img">
+								<div class="bg-img-text"></div>
+							</div>
 							<h2>dish name</h2>
-							<p>cook time</p>
+							<p class="cook-time">cook time</p>
 						</div>
 						<div class="recipe">
-							<img src="../images/dammy_img_food.jpg" alt="">
+							<div class="bg-img">
+								<div class="bg-img-text"></div>
+							</div>
 							<h2>dish name</h2>
-							<p>cook time</p>
+							<p class="cook-time">cook time</p>
 						</div>
 						<div class="recipe">
-							<img src="../images/dammy_img_food.jpg" alt="">
+							<div class="bg-img">
+								<div class="bg-img-text"></div>
+							</div>
 							<h2>dish name</h2>
-							<p>cook time</p>
+							<p class="cook-time">cook time</p>
 						</div>
 						<div class="recipe">
-							<img src="../images/dammy_img_food.jpg" alt="">
+							<div class="bg-img">
+								<div class="bg-img-text"></div>
+							</div>
 							<h2>dish name</h2>
-							<p>cook time</p>
+							<p class="cook-time">cook time</p>
 						</div>
 						<div class="recipe">
-							<img src="../images/dammy_img_food.jpg" alt="">
+							<div class="bg-img">
+								<div class="bg-img-text"></div>
+							</div>
 							<h2>dish name</h2>
-							<p>cook time</p>
+							<p class="cook-time">cook time</p>
 						</div>
 						<div class="recipe">
-							<img src="../images/dammy_img_food.jpg" alt="">
+							<div class="bg-img">
+								<div class="bg-img-text"></div>
+							</div>
 							<h2>dish name</h2>
-							<p>cook time</p>
+							<p class="cook-time">cook time</p>
 						</div>
 				</div>
 			</div>
