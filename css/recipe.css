@@ -10,16 +10,7 @@ body {
 .flex {
   display: flex;
 }
-<<<<<<< HEAD
-=======
-.header {
-  width: 100%;
-  height: 75px;
-  position: sticky;
-  top: 0;
-  background-color: green;
-}
->>>>>>> 103231ce2da817b15acf0d2524329ea0cacab449
+
 .main {
   width: 100%;
   height: calc(100vh - 75px);
