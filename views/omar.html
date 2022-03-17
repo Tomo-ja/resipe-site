@@ -8,9 +8,342 @@
 	<link rel="stylesheet" href="../css/reset.css">
 	<link rel="stylesheet" href="../css/basic.css">
 	<link rel="stylesheet" href="../css/recipe.css">
+	<link rel="stylesheet" href="../css/dropmenu.css">
 </head>
 <body>
-	
+	<header class="header">
+			<h2>HOME</h2>
+			<h2>ABOUT</h2>
+			<h2>CONTACT</h2>
+			<img src="../images/logo.png" alt="logo" id="logo">
+			<div class="dropdown">
+					<button onclick="myFunction()" class="dropbtn">RECIPES</button>
+					<div id="myDropdown" class="dropdown-content">
+					  <a href="#">Link 1</a>
+					  <a href="#">Link 2</a>
+					  <a href="#">Link 3</a>
+					</div>
+				  </div>
+			
+			<div>
+				<h2>ARTICLE <span><img src="../images/icon_drop-down.svg" alt=""></span></h2>
+			</div>
+			<h2>Share yours</h2>
+	</header>
+	<main class="main flex">
+		<section id="over-view" class="flex">
+			<div class="tab flex">
+				<p>Overview</p>
+			</div>
+			<div class="content">
+				<div class="container flex">
+					<div class="img-holder">
+						<img src="../images/dammy_img_food.jpg" alt="" srcset="">
+					</div>
+					<div class="content-holder">
+						<h1>Name of dishes</h1>
+						<ul class="flex tags">
+							<li>tag</li>
+							<li>tag</li>
+							<li>tag</li>
+							<li>tag</li>
+						</ul>
+						<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+							Laboriosam non beatae doloribus aliquam. Quasi libero aliquam, 
+							veritatis ducimus alias minima soluta eum consectetur, nobis 
+							expedita cupiditate dolor perferendis nihil ab laudantium accusantium 
+							voluptates dicta perspiciatis quae quia architecto consequuntur? Esse 
+							similique voluptas temporibus velit? Sapiente assumenda amet quas quos ea!</p>
+						<div class="feedback flex">
+							<p><img src="../images/icon_good-btn.svg" alt="">100</p>
+							<p><img src="../images/icon_timer.svg"> 15 min</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="ingredients" class="flex">
+			<div class="tab flex">
+				<p>Ingredients</p>
+			</div>
+			<div class="content">
+				<div class="container">
+					<h1>Ingredients</h1>
+					<div class="flex">
+						<div class="item">
+							<div class="img-holder">
+								<img src="../images/dammy_img_apple.jpg" alt="" >
+							</div>
+							<p>Apple</p>
+						</div>
+						<div class="item">
+							<div class="img-holder">
+								<img src="../images/dammy_img_apple.jpg" alt="" >
+							</div>
+							<p>Apple</p>
+						</div>
+						<div class="item">
+							<div class="img-holder">
+								<img src="../images/dammy_img_apple.jpg" alt="" >
+							</div>
+							<p>Apple</p>
+						</div>
+						<div class="item">
+							<div class="img-holder">
+								<img src="../images/dammy_img_apple.jpg" alt="" >
+							</div>
+							<p>Apple</p>
+						</div>
+						<div class="item">
+							<div class="img-holder">
+								<img src="../images/dammy_img_apple.jpg" alt="" >
+							</div>
+							<p>Apple</p>
+						</div>
+						<div class="item">
+							<div class="img-holder">
+								<img src="../images/dammy_img_apple.jpg" alt="" >
+							</div>
+							<p>Apple</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="method" class="flex">
+			<div class="tab flex">
+				<p>Method</p>
+			</div>
+			<div class="content">
+				<div class="container">
+					<h1>How to cook</h1>
+					<ol>
+						<li>Bring a large pot of lightly salted water to a boil. Cook spaghetti in the boiling water, 
+							stirring occasionally until cooked through but firm to the bite, 10 to 12 minutes. 
+							Drain and rinse under cold water. Transfer pasta to a serving bowl and toss with olive oil.</li>
+						<li>Whisk soy sauce, sugar, vinegar, sesame seeds, chili sauce, and sesame oil together in a bowl 
+							until sugar dissolves. Toss soy sauce mixture with pasta; top with green onions, red bell pepper, and snap peas. 
+							Refrigerate 30 minutes to overnight to allow flavors to blend. Toss again before serving.</li>
+						<!-- <li>Lorem, ipsum dolor.</li>
+						<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione sapiente fugiat, deleniti nostrum aspernatur quia et praesentium atque reiciendis suscipit laborum provident vel consequuntur eligendi ad enim. Ab, vero error!</li>
+						<li>Lorem, ipsum dolor.</li> -->
+					</ol>
+				</div>
+			</div>
+		</section>
+		<section id="video" class="flex">
+			<div class="tab flex">
+				<p>Cook with Video</p>
+			</div>
+			<div class="content">
+				<div class="container">
+					<h1>Cook with the video</h1>
+					<div class="video-holder">
+						<iframe width= "880px" height="497px" src="https://www.youtube.com/embed/522BBAsijU0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="review" class="flex">
+			<div class="tab flex">
+				<p>Review</p>
+			</div>
+			<div class="content">
+				<div class="container">
+					<h1>Review</h1>
+					<div class="comment">
+						<div class="flex">
+							<div class="img-holder">
+								<img src="../images/dammy_img_face.jpeg" alt="">
+							</div>
+							<div>
+								<h2>Name of person</h2>
+								<p>Cook at March 13th, 2022</p>
+							</div>
+						</div>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta officiis deserunt quidem odit quisquam qui sed voluptas consequuntur dolor atque?</p>
+					</div>
+					<div class="comment">
+						<div class="flex">
+							<div class="img-holder">
+								<img src="../images/dammy_img_face.jpeg" alt="">
+							</div>
+							<div>
+								<h2>Name of person</h2>
+								<p>Cook at March 13th, 2022</p>
+							</div>
+						</div>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta officiis deserunt quidem odit quisquam qui sed voluptas consequuntur dolor atque?</p>
+					</div>
+					<div class="comment">
+						<div class="flex">
+							<div class="img-holder">
+								<img src="../images/dammy_img_face.jpeg" alt="">
+							</div>
+							<div>
+								<h2>Name of person</h2>
+								<p>Cook at March 13th, 2022</p>
+							</div>
+						</div>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta officiis deserunt quidem odit quisquam qui sed voluptas consequuntur dolor atque?</p>
+					</div>
+					<div class="comment">
+						<div class="flex">
+							<div class="img-holder">
+								<img src="../images/dammy_img_face.jpeg" alt="">
+							</div>
+							<div>
+								<h2>Name of person</h2>
+								<p>Cook at March 13th, 2022</p>
+							</div>
+						</div>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta officiis deserunt quidem odit quisquam qui sed voluptas consequuntur dolor atque?</p>
+					</div>
+					<div class="comment">
+						<div class="flex">
+							<div class="img-holder">
+								<img src="../images/dammy_img_face.jpeg" alt="">
+							</div>
+							<div>
+								<h2>Name of person</h2>
+								<p>Cook at March 13th, 2022</p>
+							</div>
+						</div>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta officiis deserunt quidem odit quisquam qui sed voluptas consequuntur dolor atque?</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="similar-recipes" class="flex">
+			<div class="tab flex">
+				<p>Similar Recipes</p>
+			</div>
+			<div class="content">
+				<div class="container">
+					<h1>Similar Recipes</h1>
+					<div class="flex">
+						<div class="recipe">
+							<div class="bg-img">
+								<div class="bg-img-text"></div>
+							</div>
+							<h2>dish name</h2>
+							<p class="cook-time">cook time</p>
+						</div>
+						<div class="recipe">
+							<div class="bg-img">
+								<div class="bg-img-text"></div>
+							</div>
+							<h2>dish name</h2>
+							<p class="cook-time">cook time</p>
+						</div>
+						<div class="recipe">
+							<div class="bg-img">
+								<div class="bg-img-text"></div>
+							</div>
+							<h2>dish name</h2>
+							<p class="cook-time">cook time</p>
+						</div>
+						<div class="recipe">
+							<div class="bg-img">
+								<div class="bg-img-text"></div>
+							</div>
+							<h2>dish name</h2>
+							<p class="cook-time">cook time</p>
+						</div>
+						<div class="recipe">
+							<div class="bg-img">
+								<div class="bg-img-text"></div>
+							</div>
+							<h2>dish name</h2>
+							<p class="cook-time">cook time</p>
+						</div>
+						<div class="recipe">
+							<div class="bg-img">
+								<div class="bg-img-text"></div>
+							</div>
+							<h2>dish name</h2>
+							<p class="cook-time">cook time</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="serve-with" class="flex">
+			<div class="tab flex">
+				<p>Serve with</p>
+			</div>
+			<div class="content">
+				<div class="container">
+					<h1>Serve with</h1>
+					<div class="flex">
+						<div class="recipe">
+							<div class="bg-img">
+								<div class="bg-img-text"></div>
+							</div>
+							<h2>dish name</h2>
+							<p class="cook-time">cook time</p>
+						</div>
+						<div class="recipe">
+							<div class="bg-img">
+								<div class="bg-img-text"></div>
+							</div>
+							<h2>dish name</h2>
+							<p class="cook-time">cook time</p>
+						</div>
+						<div class="recipe">
+							<div class="bg-img">
+								<div class="bg-img-text"></div>
+							</div>
+							<h2>dish name</h2>
+							<p class="cook-time">cook time</p>
+						</div>
+						<div class="recipe">
+							<div class="bg-img">
+								<div class="bg-img-text"></div>
+							</div>
+							<h2>dish name</h2>
+							<p class="cook-time">cook time</p>
+						</div>
+						<div class="recipe">
+							<div class="bg-img">
+								<div class="bg-img-text"></div>
+							</div>
+							<h2>dish name</h2>
+							<p class="cook-time">cook time</p>
+						</div>
+						<div class="recipe">
+							<div class="bg-img">
+								<div class="bg-img-text"></div>
+							</div>
+							<h2>dish name</h2>
+							<p class="cook-time">cook time</p>
+						</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	<script>
+		/* When the user clicks on the button,
+		toggle between hiding and showing the dropdown content */
+		function myFunction() {
+		document.getElementById("myDropdown").classList.toggle("show");
+		}
+
+		// Close the dropdown menu if the user clicks outside of it
+		window.onclick = function(event) {
+		if (!event.target.matches('.dropbtn')) {
+			var dropdowns = document.getElementsByClassName("dropdown-content");
+			var i;
+			for (i = 0; i < dropdowns.length; i++) {
+			var openDropdown = dropdowns[i];
+			if (openDropdown.classList.contains('show')) {
+				openDropdown.classList.remove('show');
+			}
+			}
+		}
+		}
+
+	</script>
 
 	<script src="../javascript/jquery-3.6.0.min.js"></script>
 	<script src="../javascript/recipe.js"></script>
