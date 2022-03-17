@@ -10,6 +10,7 @@ body {
 .flex {
   display: flex;
 }
+
 .main {
   width: 100%;
   height: calc(100vh - 75px);
@@ -27,7 +28,7 @@ section .tab {
   background-color: #363636;
   border-left: 1px;
   border-color: white;
-  color: white;
+  color: #eefff5;
 }
 section .tab > p {
   writing-mode: vertical-rl;
@@ -38,7 +39,7 @@ section .content {
   display: none;
   overflow-y: scroll;
   width: calc(100vw - 266px);
-  background-color: white;
+  background-color: #f0efef;
 }
 section:nth-child(6) .content {
   display: block;
@@ -75,7 +76,7 @@ section .container {
 }
 #over-view .content-holder p {
   margin-bottom: 30px;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 1.5em;
 }
 #over-view .feedback p {
@@ -101,7 +102,7 @@ section .container {
   margin: 35px 25px;
   padding-bottom: 20px;
   border-bottom: 1px solid #c4c4c4;
-  font-size: 26px;
+  font-size: 16px;
   list-style: decimal;
 }
 
@@ -155,8 +156,10 @@ section .container {
   margin: 0;
 }
 .tab.hover {
-  background-color: blue;
+  background-color: rgb(192, 192, 196);
+  color: #363636;
 }
 .tab.open {
-  background-color: cornsilk;
+  background-color: #eefff5;
+  color: #363636;
 }
