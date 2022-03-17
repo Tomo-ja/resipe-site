@@ -46,9 +46,9 @@ section:nth-child(6) .content {
   display: block;
 }
 section .container {
-  max-width: 100%;
+  max-width: 980px;
   padding: 35px 35px;
-  margin: 100px 0 100px 30px;
+  margin: 100px auto;
   position: relative;
 }
 
@@ -60,7 +60,6 @@ section .container {
   object-fit: cover;
 }
 #over-view .content-holder {
-  width: 50%;
   margin-left: 30px;
 }
 #over-view .tags {
@@ -155,6 +154,25 @@ section .container {
 #serve-with p {
   margin: 0;
 }
+#similar-recipes .bg-img,
+#serve-with .bg-img {
+  width: 200px;
+  height: 300px;
+  padding: 100px 0;
+  background-image: url(../images/dammy_img_food.jpg);
+  background-size: cover;
+}
+#similar-recipes .bg-img-text,
+#serve-with .bg-img-text {
+  width: 0px;
+  height: 0px;
+  text-align: center;
+  line-height: 100px;
+  margin: auto;
+  background-color: chocolate;
+  border-radius: 50%;
+}
+
 .tab.hover {
   background-color: white;
   color: black;
