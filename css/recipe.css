@@ -10,7 +10,6 @@ body {
 .flex {
   display: flex;
 }
-
 .main {
   width: 100%;
   height: calc(100vh - 75px);
@@ -42,7 +41,7 @@ section .content {
   overflow-y: scroll;
   width: calc(100vw - 266px);
 }
-section:nth-child(6) .content {
+section:nth-child(1) .content {
   display: block;
 }
 section .container {

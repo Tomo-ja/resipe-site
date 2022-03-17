@@ -1,19 +1,3 @@
-#slide1 {
-  background-image: url("https://riomarkennedyonline.com.br/riomarkennedyonline/2020/05/PASTEL_CHEPPITOS.jpg");
-}
-
-#slide2 {
-  background-image: url("https://images.orangepage.net/media/article/5012/images/8d3d9696cb5d7dbc0da44fa5f553b6f818e7d3e0.jpg?w=1200");
-}
-
-#slide3 {
-  background-image: url("https://www.giallozafferano.it/images/242-24242/Crepe-alla-Nutella_450x300.jpg");
-}
-
-#slide4 {
-  background-image: url("https://s2.glbimg.com/nksCDlmBan7iiSCgJqZdN7A5ekc=/e.glbimg.com/og/ed/f/original/2019/10/22/6th-place_small-white-hair-spider_javier-ruperez_nikon-small-world.jpg");
-}
-
 body {
   /* background: #3206FF;
   background: linear-gradient(45deg, #3206FF, #F9839B); */
@@ -21,7 +5,7 @@ body {
   background-color: black;
 }
 
-.content {
+.subheader {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -29,7 +13,11 @@ body {
   width: 54%;
 }
 
-.container {
+.subheader input {
+  background-color: white;
+}
+
+.slide2 {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -46,10 +34,11 @@ body {
   overflow: hidden;
 }
 
-h1 {
-  margin-left: 34%;
-  margin-top: 10%;
+.subheader h1 {
+  margin: 0 auto;
+  margin-top: 5%;
   font-size: xx-large;
+  color: white;
 }
 
 h4 {
@@ -60,6 +49,7 @@ h4 {
 .slide-image {
   font-size: xx-large;
   color: white;
+  margin-top: 50px;
 }
 
 #searchbar {
@@ -108,9 +98,7 @@ h4 {
   display: flex;
   flex-direction: row;
   gap: 30px;
-  width: 54%;
   margin: 0 auto;
-  margin-top: 5%;
   opacity: 1;
 }
 
@@ -120,10 +108,6 @@ h4 {
   gap: 30px;
   width: 50%;
   margin: 100px auto 100px auto;
-}
-
-img {
-  width: 100%;
 }
 
 .topics {
@@ -261,13 +245,13 @@ button {
   margin: 8% 0 0 0;
 }
 
-p {
+.about p {
   font-size: 24px;
   text-align: center;
   padding: 25px 20% 0 20%;
 }
 
-h2 {
+.about h2 {
   font-size: 24px;
   text-align: center;
   padding: 25px 20% 0 20%;
