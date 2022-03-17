@@ -154,6 +154,25 @@ section .container {
 #serve-with p {
   margin: 0;
 }
+#similar-recipes .bg-img,
+#serve-with .bg-img {
+  width: 200px;
+  height: 300px;
+  padding: 100px 0;
+  background-image: url(../images/dammy_img_food.jpg);
+  background-size: cover;
+}
+#similar-recipes .bg-img-text,
+#serve-with .bg-img-text {
+  width: 0px;
+  height: 0px;
+  text-align: center;
+  line-height: 100px;
+  margin: auto;
+  background-color: chocolate;
+  border-radius: 50%;
+}
+
 .tab.hover {
   background-color: white;
   color: black;
