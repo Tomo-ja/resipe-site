@@ -19,3 +19,15 @@ $(".bg-img").hover(function(){
 	$(this).children().animate({"width": "0px", "height": "0px"})
 	$(this).children().last().text("")
 })
+
+$("#review-form").hide()
+
+$("#write-review-btn").on("click", function(){
+	$("#review-form").slideDown()
+})
+$("#close-btn").on("click", function(){
+	$("#review-form").slideUp()
+})
+$("#review-form").on("submit", function(event){
+	event.preventDefault()
+})

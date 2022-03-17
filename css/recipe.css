@@ -41,7 +41,7 @@ section .content {
   overflow-y: scroll;
   width: calc(100vw - 266px);
 }
-section:nth-child(1) .content {
+section:nth-child(5) .content {
   display: block;
 }
 section .container {
@@ -128,6 +128,9 @@ section .container {
   padding-bottom: 25px;
   border-bottom: 1px solid #c4c4c4;
 }
+#review .container {
+  position: relative;
+}
 #review .comment .img-holder {
   width: 50px;
   height: 50px;
@@ -144,6 +147,73 @@ section .container {
   font-size: 18px;
   font-weight: 600;
 }
+#review .container > .flex {
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+#review h1 {
+  margin-bottom: 0;
+}
+#write-review-btn {
+  margin: 0;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: black;
+  color: #fff;
+}
+#write-review-btn:hover {
+  transform: scale(1.3);
+  -webkit-transition: transform 0.3s;
+}
+#review-form {
+  position: absolute;
+  left: 200px;
+  width: 500px;
+  height: 500px;
+  padding: 30px;
+  background-color: #363636;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#review-form input {
+  width: 75%;
+  height: 30px;
+  background-color: white;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+#review-form textarea {
+  width: 350px;
+  height: 150px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  padding: 10px;
+  font-size: 16px;
+}
+#review-form h3 {
+  padding: 10px 20px;
+  background-color: white;
+  border-radius: 20px;
+  font-size: 24px;
+  margin: 20px;
+}
+#review-form input[type="submit"] {
+  width: 100px;
+  text-align: center;
+  font-size: 16px;
+}
+#review-form input[type="submit"]:hover {
+  transform: scale(1.3);
+  -webkit-transition: transform 0.3s;
+}
+#close-btn:hover {
+  background-color: #fff;
+  padding: 0 10px;
+  border-radius: 20px;
+}
+
 #similar-recipes .flex,
 #serve-with .flex {
   flex-wrap: wrap;
