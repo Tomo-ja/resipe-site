@@ -33,6 +33,9 @@ body {
   max-width: 615px;
   margin: 10px;
   overflow: hidden;
+  border-radius: 20px;
+  width: 35vw;
+  height: 40vh;
 }
 
 .subheader h1 {
@@ -47,10 +50,12 @@ h4 {
   text-align: center;
 }
 
-.slide-image {
+.slider__image {
     font-size: xx-large;
     color: white;
     margin-top: 50px;
+    background-position: center;
+    background-size: cover;
 }
 
 #searchbar{
@@ -58,13 +63,6 @@ h4 {
   padding: 15px;
   margin-top:15px;
   border-radius: 10px;
-}
-
-.slide-image {
-  width: 35vw;
-  height: 40vh;
-  background-position: center;
-  background-size: cover;
 }
 
 #carousel {
@@ -101,6 +99,7 @@ h4 {
     gap: 30px; 
     margin: 0 auto;
     opacity: 1;
+    z-index: 1;
 }
 
 .related-topics {
@@ -167,6 +166,7 @@ button {
   background-color: #333;
   opacity: .8;
   cursor: pointer;
+  z-index: 2;
 }
 
 #nav-button--prev {
@@ -211,6 +211,7 @@ button {
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
+  z-index: 2;
 }
 
 .slider__navlink {
@@ -236,10 +237,12 @@ button {
 .slider__nav-button {
   height: 40px;
   width: 40px;
+ 
 }
 .slider__navlink {
   height: 12px;
   width: 12px;
+ 
   }}
 
 .about {
