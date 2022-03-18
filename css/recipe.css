@@ -41,7 +41,7 @@ section .content {
   overflow-y: scroll;
   width: calc(100vw - 266px);
 }
-section:nth-child(5) .content {
+section:nth-child(1) .content {
   display: block;
 }
 section .container {
