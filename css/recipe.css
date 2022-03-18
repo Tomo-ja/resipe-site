@@ -6,6 +6,9 @@ body {
   font-weight: 400;
   line-height: 22px;
   letter-spacing: 0.6px;
+  background-image: url(../images/Main-banner-1-1903x852.jpg);
+  background-position-y: 75px;
+
 }
 .flex {
   display: flex;
@@ -49,6 +52,10 @@ section .container {
   padding: 35px 35px;
   margin: 100px auto;
   position: relative;
+  background-color: #eefff5;
+  border-radius: 10px;
+  border-color: white;
+  back
 }
 
 #over-view .img-holder {
