@@ -100,6 +100,9 @@ section .container {
   margin-bottom: 10px;
 }
 #ingredients .flex .img-holder img {
+  width: 100%;
+  height: 100%;
+
   border-radius: 50%;
 }
 #ingredients .flex .item {
