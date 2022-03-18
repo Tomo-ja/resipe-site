@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="../css/reset.css">
 	<link rel="stylesheet" href="../css/basic.css">
 	<link rel="stylesheet" href="../css/recipe.css">
+	<link rel="stylesheet" href="../css/dropmenu.css">
 </head>
 <body>
 	<header class="header">
@@ -15,25 +16,16 @@
 			<h2>ABOUT</h2>
 			<h2>CONTACT</h2>
 			<img src="../images/logo.png" alt="logo" id="logo">
-			<div>
-				<h2>RECIPES<span><img src="../images/icon_drop-down.svg" alt=""></span></h2>
-				<!-- <div id="recipes" class="modal">
-					<h3>Category</h3>
-					<input type="text">
-					<ul>
-						<li>Italian</li>
-						<li>Chinese</li>
-						<li>Japanese</li>
-						<li>Korean</li>
-						<li>Brazilian</li>
-						<li>Mexican</li>
-					</ul>
-				</div>	 -->
+			<div class="dropdown">
+				<button onclick="myFunction()" class="dropbtn">RECIPES<span><img src="../images/icon_drop-down.svg" alt=""></span></button>
+				<div id="myDropdown" class="dropdown-content">
+				  <a href="#">Chicken</a>
+				  <a href="#">Meat</a>
+				  <a href="#">Salads</a>
+				</div>
 			</div>
-			<div>
-				<h2>ARTICLE <span><img src="../images/icon_drop-down.svg" alt=""></span></h2>
-			</div>
-			<h2>Share yours</h2>
+			<h2>ARTICLE <span><img src="../images/icon_drop-down.svg" alt=""></span></h2>
+			<h2>SHARE</h2>
 	</header>
 	<main class="main flex">
 		<section id="over-view" class="flex">
@@ -43,25 +35,20 @@
 			<div class="content">
 				<div class="container flex">
 					<div class="img-holder">
-						<img src="../images/dammy_img_food.jpg" alt="" srcset="">
+						<img src="../images/img_tomo_main.jpeg" alt="" srcset="">
 					</div>
 					<div class="content-holder">
-						<h1>Name of dishes</h1>
+						<h1>Nikujaga(肉じゃが)</h1>
 						<ul class="flex tags">
-							<li>tag</li>
-							<li>tag</li>
-							<li>tag</li>
-							<li>tag</li>
+							<li>Japanese</li>
+							<li>Main</li>
+							<li>Meat</li>
+							<li>Potato</li>
 						</ul>
-						<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-							Laboriosam non beatae doloribus aliquam. Quasi libero aliquam, 
-							veritatis ducimus alias minima soluta eum consectetur, nobis 
-							expedita cupiditate dolor perferendis nihil ab laudantium accusantium 
-							voluptates dicta perspiciatis quae quia architecto consequuntur? Esse 
-							similique voluptas temporibus velit? Sapiente assumenda amet quas quos ea!</p>
+						<p>We are making Nikujaga, one of the most popular dishes in home cooking. This time, we will add a minimum amount of water to bring out the maximum flavor from the ingredients. The combined umami of the meat and vegetable makes this dish absolutely delicious!</p>
 						<div class="feedback flex">
 							<p><img src="../images/icon_good-btn.svg" alt="">100</p>
-							<p><img src="../images/icon_timer.svg"> 15 min</p>
+							<p><img src="../images/icon_timer.svg"> 30 min</p>
 						</div>
 					</div>
 				</div>
@@ -77,39 +64,57 @@
 					<div class="flex">
 						<div class="item">
 							<div class="img-holder">
-								<img src="../images/dammy_img_apple.jpg" alt="" >
+								<img src="../images/img_tomo_thin-beef.webp" alt="" >
 							</div>
-							<p>Apple</p>
+							<p>Thin Beef Slices</p>
 						</div>
 						<div class="item">
 							<div class="img-holder">
-								<img src="../images/dammy_img_apple.jpg" alt="" >
+								<img src="../images/img_tomo_potato.jpeg" alt="" >
 							</div>
-							<p>Apple</p>
+							<p>Potatoes</p>
 						</div>
 						<div class="item">
 							<div class="img-holder">
-								<img src="../images/dammy_img_apple.jpg" alt="" >
+								<img src="../images/img_tomo_carrot.jpeg" alt="" >
 							</div>
-							<p>Apple</p>
+							<p>Carrot</p>
 						</div>
 						<div class="item">
 							<div class="img-holder">
-								<img src="../images/dammy_img_apple.jpg" alt="" >
+								<img src="../images/img_tomo_onion.jpeg" alt="" >
 							</div>
-							<p>Apple</p>
+							<p>Onion</p>
 						</div>
 						<div class="item">
 							<div class="img-holder">
-								<img src="../images/dammy_img_apple.jpg" alt="" >
+								<img src="../images/img_tomo_green-peas.jpeg" alt="" >
 							</div>
-							<p>Apple</p>
+							<p>Green Peas</p>
 						</div>
 						<div class="item">
 							<div class="img-holder">
-								<img src="../images/dammy_img_apple.jpg" alt="" >
+								<img src="../images/img_tomo_soy-souce.png" alt="" >
 							</div>
-							<p>Apple</p>
+							<p>Soy sauce</p>
+						</div>
+						<div class="item">
+							<div class="img-holder">
+								<img src="../images/img_tomo_sugar.webp" alt="" >
+							</div>
+							<p>Sugar</p>
+						</div>
+						<div class="item">
+							<div class="img-holder">
+								<img src="../images/img_tomo_sake.jpeg" alt="" >
+							</div>
+							<p>Sake</p>
+						</div>
+						<div class="item">
+							<div class="img-holder">
+								<img src="../images/img_tomo_dashi.jpeg" alt="" >
+							</div>
+							<p>Dashi stock</p>
 						</div>
 					</div>
 				</div>
@@ -123,15 +128,21 @@
 				<div class="container">
 					<h1>How to cook</h1>
 					<ol>
-						<li>Bring a large pot of lightly salted water to a boil. Cook spaghetti in the boiling water, 
-							stirring occasionally until cooked through but firm to the bite, 10 to 12 minutes. 
-							Drain and rinse under cold water. Transfer pasta to a serving bowl and toss with olive oil.</li>
-						<li>Whisk soy sauce, sugar, vinegar, sesame seeds, chili sauce, and sesame oil together in a bowl 
-							until sugar dissolves. Toss soy sauce mixture with pasta; top with green onions, red bell pepper, and snap peas. 
-							Refrigerate 30 minutes to overnight to allow flavors to blend. Toss again before serving.</li>
-						<!-- <li>Lorem, ipsum dolor.</li>
-						<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione sapiente fugiat, deleniti nostrum aspernatur quia et praesentium atque reiciendis suscipit laborum provident vel consequuntur eligendi ad enim. Ab, vero error!</li>
-						<li>Lorem, ipsum dolor.</li> -->
+						<li>First, let's prepare the ingredients. Cut the potato into relatively large bite-size pieces. Lightly rinse the potato and wipe the excess water from the surface.</li>
+						<li>Cut the carrot into bite-size pieces while slightly rotating it for each cut.</li>
+						<li>Cut the onion in half lengthwise and slice it into 4 wedges along the grain, leaving the bottom part still attached.</li>
+						<li>Remove the firm stringy part from the snow pea pods. Pull the string from the stem end to the tip along the pod.</li>
+						<li>Let's make Nikujaga. Heat about a half tablespoonful of vegetable oil in a pan. Arrange the beef slices on the pan.</li>
+						<li>When the redness in the beef almost turns brown, transfer all of the beef to a tray.</li>
+						<li>Now, in the same pan, add the potato and carrot and stir-fry.</li>
+						<li>Thoroughly stir-fry until the surface of the potato becomes translucent. Cooking the ingredients thoroughly at this stage helps to reduce the water you will add later.</li>
+						<li>Distribute the saved beef onto the potato. Pour over the dashi stock.</li>
+						<li>Add the sugar and sake. Submerge the sugar in the broth and lightly stir to dissolve it.</li>
+						<li>Cover the ingredients with a paper towel. This will work as an otoshibuta, also known as a drop-lid, and help cook the ingredients with a smaller amount of broth.</li>
+						<li>Cover with a lid that fits the pan well and simmer for 10 minutes. When you check the heat, listen to the sound at a close distance. You will hear the pleasant simmering sound at the desired heat level. If the heat is too strong, the potato will break apart as the broth boils.</li>
+						<li>When you have simmered for 10 minutes, move the paper towel to the side and pour over the soy sauce.</li>
+						<li>After simmer for 10 minutes more, skewer the potato with a bamboo stick to check if it is cooked through.</li>
+						<li>Finally, arrange the ingredients and garnish with the saved snow peas. This nikujaga is colorful, visually appealing and delicious!</li>
 					</ol>
 				</div>
 			</div>
@@ -144,8 +155,7 @@
 				<div class="container">
 					<h1>Cook with the video</h1>
 					<div class="video-holder">
-						<iframe width= "880px" height="497px" src="https://www.youtube.com/embed/522BBAsijU0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-					</div>
+						<iframe width="880" height="497" src="https://www.youtube.com/embed/lCuP3_dMtpA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>					</div>
 				</div>
 			</div>
 		</section>
@@ -155,7 +165,18 @@
 			</div>
 			<div class="content">
 				<div class="container">
-					<h1>Review</h1>
+					<div class="flex">
+						<h1>Review</h1>
+						<p id="write-review-btn">Write a review</p>
+					</div>
+					<form action="#" id="review-form">
+						<h3>Create Review</h3>
+						<input type="text" placeholder="Name">
+						<input type="text" placeholder="Email">
+						<textarea placeholder="Tell me your review..."></textarea>
+						<input type="submit">
+						<div id="close-btn">Back</div>
+					</form>
 					<div class="comment">
 						<div class="flex">
 							<div class="img-holder">

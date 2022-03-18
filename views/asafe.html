@@ -8,8 +8,26 @@
 	<link rel="stylesheet" href="../css/reset.css">
 	<link rel="stylesheet" href="../css/basic.css">
 	<link rel="stylesheet" href="../css/recipe.css">
+	<link rel="stylesheet" href="../css/dropmenu.css">
 </head>
 <body>
+	<header class="header">
+		<h2>HOME</h2>
+		<h2>ABOUT</h2>
+		<h2>CONTACT</h2>
+		<img src="../images/logo.png" alt="logo" id="logo">
+		<div class="dropdown">
+			<button onclick="myFunction()" class="dropbtn">RECIPES<span><img src="../images/icon_drop-down.svg" alt=""></span></button>
+			<div id="myDropdown" class="dropdown-content">
+			  <a href="#">Chicken</a>
+			  <a href="#">Meat</a>
+			  <a href="#">Salads</a>
+			</div>
+		</div>
+		<h2>ARTICLE <span><img src="../images/icon_drop-down.svg" alt=""></span></h2>
+		<h2>SHARE</h2>
+	</header>
+	
 	<main class="main flex">
 		<section id="over-view" class="flex">
 			<div class="tab flex">
@@ -276,5 +294,6 @@
 
 	<script src="../javascript/jquery-3.6.0.min.js"></script>
 	<script src="../javascript/recipe.js"></script>
+	<script src="./javascript/recipe.js"></script>
 </body>
 </html>

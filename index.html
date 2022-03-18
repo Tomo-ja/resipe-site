@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="./css/reset.css">
 	<link rel="stylesheet" href="./css/basic.css">
 	<link rel="stylesheet" href="./css/index.css">
+	<link rel="stylesheet" href="./css/dropmenu.css">
 </head>
 
 <body>
@@ -15,11 +16,17 @@
 		<h2>HOME</h2>
 		<h2>ABOUT</h2>
 		<h2>CONTACT</h2>
-		<img src="./images/logo.png" alt="logo">
-		<h2>RECIPES</h2>
-		<h2>ARTICLE</h2>
-		<h2>SHARE YOUR RECIPE</h2>
-	
+		<img src="./images/logo.png" alt="logo" id="logo">
+		<div class="dropdown">
+			<button onclick="myFunction()" class="dropbtn">RECIPES<span><img src="./images/icon_drop-down.svg" alt=""></span></button>
+			<div id="myDropdown" class="dropdown-content">
+			  <a href="#">Chicken</a>
+			  <a href="#">Meat</a>
+			  <a href="#">Salads</a>
+			</div>
+		</div>
+		<h2>ARTICLE <span><img src="./images/icon_drop-down.svg" alt=""></span></h2>
+		<h2>SHARE</h2>
 	</header>
 	<div class="subheader">
 		<h1>3000+ Resipes Waiting for you</h1>
@@ -37,12 +44,12 @@
 				</div>
 				<div class="slider__image">			
 					<a href="views/tomo.html">			
-						<img class="img-slide"  src="https://images.orangepage.net/media/article/5012/images/8d3d9696cb5d7dbc0da44fa5f553b6f818e7d3e0.jpg?w=1200" alt="food2">					
+						<img class="img-slide"  src="images/img_tomo_main.jpeg" alt="food2">					
 					</a>
 				</div>
 				<div class="slider__image">
 					<a href="views/nico.html">	
-						<img class="img-slide"  src="https://www.giallozafferano.it/images/242-24242/Crepe-alla-Nutella_450x300.jpg" alt="food3">
+						<img class="img-slide"  src="images/images-nicofood/image-nicofood-lasagna.jpg" alt="food3">
 					</a>
 				</div>
 				<div class="slider__image">
@@ -102,5 +109,6 @@
 
 	<script src="./javascript/jquery-3.6.0.min.js"></script>
 	<script src="./javascript/index.js"></script>
+	<script src="./javascript/recipe.js"></script>
 </body>
 </html>
