@@ -138,6 +138,7 @@ h4 {
   width: 140px;
   height: 25px;
   display: flex;
+  margin: 0 auto;
   -webkit-box-align: center;
   align-items: center;
   -webkit-box-pack: center;
