@@ -19,6 +19,42 @@ $(".bg-img").hover(function(){
 	$(this).children().animate({"width": "0px", "height": "0px"})
 	$(this).children().last().text("")
 })
+$(".bg-img2").hover(function(){
+	$(this).children().animate({"width": "100px", "height": "100px"}).css("background", "rgba(255,255,255,0.5)")
+	$(this).children().last().text("Explore")
+}, function(){
+	$(this).children().animate({"width": "0px", "height": "0px"})
+	$(this).children().last().text("")
+})
+$(".bg-img3").hover(function(){
+	$(this).children().animate({"width": "100px", "height": "100px"}).css("background", "rgba(255,255,255,0.5)")
+	$(this).children().last().text("Explore")
+}, function(){
+	$(this).children().animate({"width": "0px", "height": "0px"})
+	$(this).children().last().text("")
+})
+$(".bg-img4").hover(function(){
+	$(this).children().animate({"width": "100px", "height": "100px"}).css("background", "rgba(255,255,255,0.5)")
+	$(this).children().last().text("Explore")
+}, function(){
+	$(this).children().animate({"width": "0px", "height": "0px"})
+	$(this).children().last().text("")
+})
+$(".bg-img5").hover(function(){
+	$(this).children().animate({"width": "100px", "height": "100px"}).css("background", "rgba(255,255,255,0.5)")
+	$(this).children().last().text("Explore")
+}, function(){
+	$(this).children().animate({"width": "0px", "height": "0px"})
+	$(this).children().last().text("")
+})
+$(".bg-img6").hover(function(){
+	$(this).children().animate({"width": "100px", "height": "100px"}).css("background", "rgba(255,255,255,0.5)")
+	$(this).children().last().text("Explore")
+}, function(){
+	$(this).children().animate({"width": "0px", "height": "0px"})
+	$(this).children().last().text("")
+})
+
 
 $("#review-form").hide()
 

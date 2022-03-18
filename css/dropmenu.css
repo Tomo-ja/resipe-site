@@ -94,9 +94,30 @@
     padding-top: 3px;
 }
 
-/* .spatix{
-    display: block;
-    padding-bottom: 6px;
-    line-height: 1;
-    text-align: center;
-} */
+/* Addittional CSS for Omar Page */
+
+
+#serve-with .bg-img4 {
+    width: 200px;
+    height: 300px;
+    padding: 100px 0;
+    background-image: url(../images/images-omarfood/esparragus.jpeg);
+    background-size: cover;
+  }
+    #serve-with .bg-img5 {
+      width: 200px;
+      height: 300px;
+      padding: 100px 0;
+      background-image: url(../images/images-omarfood/fries.jpeg);
+      background-size: cover;
+    }
+    #serve-with .bg-img6 {
+      width: 200px;
+      height: 300px;
+      padding: 100px 0;
+      background-image: url(../images/images-omarfood/Original_Mac_n_Cheese_.jpg);
+      background-size: cover;
+    }
+  .revCooker{
+      width: 50%;
+  }

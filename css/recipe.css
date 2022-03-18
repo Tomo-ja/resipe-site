@@ -138,6 +138,7 @@ section .container {
   margin-bottom: 25px;
   padding-bottom: 25px;
   border-bottom: 1px solid #c4c4c4;
+  margin-top: 25px;
 }
 #review .container {
   position: relative;
@@ -247,6 +248,22 @@ section .container {
 }
 #similar-recipes .bg-img,
 #serve-with .bg-img {
+  width: 200px;
+  height: 300px;
+  padding: 100px 0;
+  background-image: url(../images/images-omarfood/Related2.jpg);
+  background-size: cover;
+}
+#similar-recipes .bg-img2,
+#serve-with .bg-img2 {
+  width: 200px;
+  height: 300px;
+  padding: 100px 0;
+  background-image: url(../images/images-omarfood/Related\ 1.jpg);
+  background-size: cover;
+}
+#similar-recipes .bg-img3,
+#serve-with .bg-img3 {
   width: 200px;
   height: 300px;
   padding: 100px 0;
