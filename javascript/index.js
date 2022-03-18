@@ -28,3 +28,4 @@ document.querySelectorAll('.slider__navlink').forEach((bullet, bulletIndex) => {
         }
     })
 })
+

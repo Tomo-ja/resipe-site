@@ -8,8 +8,26 @@
 	<link rel="stylesheet" href="../css/reset.css">
 	<link rel="stylesheet" href="../css/basic.css">
 	<link rel="stylesheet" href="../css/recipe.css">
+	<link rel="stylesheet" href="../css/dropmenu.css">
 </head>
 <body>
+	<header class="header">
+		<h2>HOME</h2>
+		<h2>ABOUT</h2>
+		<h2>CONTACT</h2>
+		<img src="../images/logo.png" alt="logo" id="logo">
+		<div class="dropdown">
+			<button onclick="myFunction()" class="dropbtn">RECIPES<span><img src="../images/icon_drop-down.svg" alt=""></span></button>
+			<div id="myDropdown" class="dropdown-content">
+			  <a href="#">Chicken</a>
+			  <a href="#">Meat</a>
+			  <a href="#">Salads</a>
+			</div>
+		</div>
+		<h2>ARTICLE <span><img src="../images/icon_drop-down.svg" alt=""></span></h2>
+		<h2>SHARE</h2>
+	</header>
+	
 	<main class="main flex">
 		<section id="over-view" class="flex">
 			<div class="tab flex">
@@ -23,10 +41,10 @@
 					<div class="content-holder">
 						<h1>Pastel</h1>
 						<ul class="flex tags">
-							<li>tag</li>
-							<li>tag</li>
-							<li>tag</li>
-							<li>tag</li>
+							<li>Brazil</li>
+							<li>Brazilian Food</li>
+							<li>"Pastel de feira"</li>
+							<li>"Traditional Food</li>
 						</ul>
 						<p>Pastel is a food composed of a dough based on flour that is formed in an envelope, filled and then fried by soaking in boiling oil. Originating from European cuisine, pastel is one of the most frequently found foods in street carts and popular trade centers in Brazil </p>
 						<div class="feedback flex">
@@ -47,39 +65,39 @@
 					<div class="flex">
 						<div class="item">
 							<div class="img-holder">
-								<img src="../images/dammy_img_apple.jpg" alt="" >
+								<img src="https://www.bakingbusiness.com/ext/resources/2020/5/WholeWheatFlour_Lead.jpg?t=1588771711&width=1080" alt="" >
 							</div>
 							<p>3 cups of wheat flour</p>
 						</div>
 						<div class="item">
 							<div class="img-holder">
-								<img src="../images/dammy_img_apple.jpg" alt="" >
+								<img src="https://www.altoastral.com.br/media/_versions/legacy/2017/07/servindo-agua-morna-copo_widexl.jpg" alt="" >
 							</div>
 							<p>1 cup of warm water</p>
 						</div>
 						<div class="item">
 							<div class="img-holder">
-								<img src="../images/dammy_img_apple.jpg" alt="" >
+								<img src="https://ae01.alicdn.com/kf/H58abc34bb8f245aeb016b15a11a30a96z/colher-de-sopa-oleo-filtro-01.jpg" alt="" >
 							</div>
 							<p>3 tablespoons (soup) of oil</p>
 						</div>
 						<div class="item">
 							<div class="img-holder">
-								<img src="../images/dammy_img_apple.jpg" alt="" >
+								<img src="https://madeinazores.eu/2092-home_default/aguardente-de-bagaco-adega-de-sant-ana-700ml.jpg" alt="" >
 							</div>
 							<p>1 tablespoons (soup) of cachaça</p>
 						</div>
 						<div class="item">
 							<div class="img-holder">
-								<img src="../images/dammy_img_apple.jpg" alt="" >
+								<img src="https://thumbs.dreamstime.com/b/colher-do-sal-estilo-d-real%C3%ADstico-de-ch%C3%A1-isolado-no-fundo-branco-ilustra%C3%A7%C3%A3o-vetor-103371667.jpg" alt="" >
 							</div>
 							<p>1 tablespoons (soup) of salt</p>
 						</div>
 						<div class="item">
 							<div class="img-holder">
-								<img src="../images/dammy_img_apple.jpg" alt="" >
+								<img src="https://www.bakingbusiness.com/ext/resources/2020/5/WholeWheatFlour_Lead.jpg?t=1588771711&width=1080" alt="" >
 							</div>
-							<p>wheat flour to work the dough</p>
+							<p>More wheat flour to work the dough</p>
 						</div>
 					</div>
 				</div>
@@ -94,12 +112,14 @@
 					<h1>How to cook</h1>
 					<ol>
 						<li>Place the flour mixed with the salt in a bowl or table and open a hole in the middle.</li>
-						<li>Whisk soy sauce, sugar, vinegar, sesame seeds, chili sauce, and sesame oil together in a bowl 
-							until sugar dissolves. Toss soy sauce mixture with pasta; top with green onions, red bell pepper, and snap peas. 
-							Refrigerate 30 minutes to overnight to allow flavors to blend. Toss again before serving.</li>
-						<!-- <li>Lorem, ipsum dolor.</li>
-						<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione sapiente fugiat, deleniti nostrum aspernatur quia et praesentium atque reiciendis suscipit laborum provident vel consequuntur eligendi ad enim. Ab, vero error!</li>
-						<li>Lorem, ipsum dolor.</li> -->
+						<li>In this hole, place the oil, the cachaça and some water.</li>
+						<li>Mix the water and flour gradually, each time picking up a little more flour from the edge of the hole.</li>
+						<li>The dough should be soft..</li>
+						<li>If it's a little sticky, it's okay, If it is too sticky, add more flour.</li>
+						<li>If it's hard, put some more water in it.</li>
+						<li>On a floured surface, open the dough with the aid of a roll, so that it is very thin.(If it doesn't get thin, it won't get crispy after frying.)</li>
+						<li>Fill to taste, and close with a fork or with the back of a knife.</li>
+						<li>Fry in hot oil (not too much) over medium-high heat and drain with the aid of a skimbag, before leaving to dry on absorbent paper.</li>
 					</ol>
 				</div>
 			</div>
@@ -112,7 +132,7 @@
 				<div class="container">
 					<h1>Cook with the video</h1>
 					<div class="video-holder">
-						<iframe width= "880px" height="497px" src="https://www.youtube.com/embed/522BBAsijU0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/yb0ZGxy1mKM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 					</div>
 				</div>
 			</div>
@@ -274,5 +294,6 @@
 
 	<script src="../javascript/jquery-3.6.0.min.js"></script>
 	<script src="../javascript/recipe.js"></script>
+	<script src="./javascript/recipe.js"></script>
 </body>
 </html>
