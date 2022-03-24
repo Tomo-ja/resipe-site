@@ -5,7 +5,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: white;
+  background-color: var(--bg);
   border-bottom: 3px solid #363636;
 }
 .header h2:hover {
