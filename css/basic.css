@@ -8,7 +8,15 @@ body {
   box-sizing: border-box;
 }
 :root {
-  background-color: white;
+  --bg-color-white: #FFF;
+  --bg-color-black: #000;
+  --bg-color-grey: #7e7d7d;
+  --bg-color-greenyellow: #adff2f;
+  --txt-color-white: #fff;
+  --txt-color-black: #000;
+  --txt-color-blue: #4654e1;
+  --border-color-white: #fff;
+  
 
   /* set font family here */
   --ff-primary: "Roboto";
@@ -21,7 +29,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: white;
+  background-color: var(--bg);
   border-bottom: 3px solid #363636;
 }
 .header h2:hover {
@@ -41,7 +49,7 @@ body {
 }
 
 form {
-  background-color: greenyellow;
+  background-color: var(--bg-color-greenyellow);
   width: 300px;
   height: 44px;
   border-radius: 5px;
@@ -53,7 +61,7 @@ form {
 input {
   all: unset;
   font: 16px system-ui;
-  color: rgb(0, 0, 0);
+  color: var(--txt-color-black);
   height: 100%;
   width: 100%;
   padding: 6px 10px;
@@ -87,7 +95,7 @@ img {
 .header .modal {
   position: absolute;
   top: 100px;
-  background-color: #c4c4c4;
+  background-color: var(--bg-color-white);
   z-index: 10;
 }
 

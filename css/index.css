@@ -2,7 +2,6 @@ body {
   /* background: #3206FF;
   background: linear-gradient(45deg, #3206FF, #F9839B); */
   min-height: 100vh;
-  background-color: black;
 }
 
 .subheader {
@@ -14,14 +13,13 @@ body {
 }
 
 .subheader input {
-  background-color: white;
+  background-color: var(--bg-color-white);
 }
 
 .slide2 {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: grey;
   margin-top: 50px;
 }
 
@@ -41,7 +39,7 @@ body {
   margin: 0 auto;
   margin-top: 5%;
   font-size: xx-large;
-  color: white;
+  color: var(--txt-color-white);
 }
 
 h4 {
@@ -51,7 +49,7 @@ h4 {
 
 .slider__image {
     font-size: xx-large;
-    color: white;
+    color: var(--txt-color-white);
     margin-top: 50px;
     background-position: center;
     background-size: cover;
@@ -116,7 +114,7 @@ h4 {
 .img-slide {
   display: flex;
   justify-content: center;
-  background-color: rgb(245, 245, 245);
+  background-color: var(--bg-color-white);
   flex: 1 1 0%;
   border-radius: 20px;
 }
@@ -124,7 +122,7 @@ h4 {
 .topics {
   align-items: center;
   justify-content: center;
-  background-color: rgb(245, 245, 245);
+  background-color: var(--bg-color-white);
   flex: 1 1 0%;
   border-radius: 20px 20px;
 }
@@ -142,7 +140,7 @@ h4 {
   align-items: center;
   -webkit-box-pack: center;
   justify-content: center;
-  background-color: rgb(255, 255, 255);
+  background-color: var(--bg-color-white);
   border: none;
   color: rgb(66, 66, 66);
   flex-direction: column;
@@ -150,12 +148,12 @@ h4 {
 }
 
 button {
-  background-color: gray;
+  background-color: var(--bg-color-grey);
   border-radius: 20px;
   width: 250px;
   height: 250px;
   display: flex;
-  color: black;
+  color:  var(--txt-color-black);
   flex-direction: column;
 }
 
@@ -163,7 +161,7 @@ button {
   position: absolute;
   height: 70px;
   width: 70px;
-  background-color: #333;
+  background-color: var(--bg-color-black);
   opacity: 0.8;
   cursor: pointer;
   z-index: 2;
@@ -185,7 +183,7 @@ button {
 #nav-button--next::after {
   content: "";
   position: absolute;
-  border: solid white;
+  border: solid var(--border-color-white);
   border-width: 0 4px 4px 0;
   display: inline-block;
   padding: 3px;
@@ -219,15 +217,15 @@ button {
   height: 20px;
   width: 20px;
   border-radius: 50%;
-  border: 1px #fff solid;
-  background-color: #333;
+  border: 1px var(--border-color-white) solid;
+  background-color: var(--bg-color-black);
   opacity: 0.8;
   margin: 0 10px 0 10px;
   cursor: pointer;
 }
 
 .slider__navlink.active {
-  background-color: #fff;
+  background-color: var(--bg-color-white);
   border: 1px #333 solid;
 }
 
@@ -244,7 +242,7 @@ button {
   }}
 
 .about {
-  background-color: white;
+  background-color: var(--bg-color-white);
   margin: 8% 0 0 0;
 }
 
